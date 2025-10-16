@@ -1,0 +1,440 @@
+/*------------------------------- PESK ------------------------------------ PESK -------------------------------------- PESK ------------------ PESK----------------*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓ ------------------ HOME ------------------------------------ HOME -------------------------------------- HOME ------------------ HOME----↓↓↓↓↓↓↓↓↓↓↓↓*/
+
+.body-home {
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container1 {
+    background-color: #2495ed;
+    width: 100%;
+}
+
+.logo-header {
+    width: 140px;
+}
+
+.icon-perfil {
+    width: 25px;
+}
+
+.icon-carrinho {
+    width: 30px;
+}
+
+.txt-header {
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+    text-shadow: 1px solid black;
+    font-size: 17px;
+}
+
+.searchbar {
+    width: 90%;
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding-left: 5%;
+}
+
+.assineja {
+    font-weight: bold;
+}
+
+.carrossel-home {
+    cursor: pointer;
+    max-width: 80%;
+    margin: 40px auto;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.categorias img {
+    gap: 40px;
+}
+.alinhar-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    gap: 5%;
+}
+
+.alinhar-categorias .col {
+    flex: 0 0 auto;
+    width: 120px; 
+}
+
+.alinhar-categorias img {
+    width: 100%;
+    max-width: 100px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.alinhar-categorias p {
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6 {
+    border-radius: 20px;
+}
+
+.c1-a,
+.c2-a,
+.c3-a,
+.c4-a,
+.c5-a,
+.c6-a {
+    align-items: center;
+    justify-items: center;
+}
+
+.title-lancamentos {
+    margin-top: 30px;
+    justify-self: center;
+    font-weight: bold;
+}
+.carrosel-lancamentos{
+   justify-items: center;
+   gap: 100px;
+}
+
+.carousel-indicators {
+    width: 60px;
+    border-radius: 50px;
+    background-color: rgb(243, 202, 20);
+    justify-self: center;
+}
+
+.cd1,
+.cd2,
+.cd3,
+.cd4,
+.cd5,
+.cd6,
+.cd7,
+.cd8 {
+    width: 250px;
+    height: 250px;
+}
+.ad-peskclub{
+   
+    width: 90%;
+    cursor: pointer;
+    max-width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/*↑↑↑↑↑↑↑↑↑↑↑↑ ----------------- Home ---------------------------------------- Home ---------------------------------------- Home ----------------------- ↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓ ----------------- Cadastro ------------------------------------ Cadastro ------------------------------------ Cadastro ------------------  ↓↓↓↓↓↓↓↓↓↓↓↓*/
+.body-cadastro {
+    background: linear-gradient(to bottom, #8ee4ff 0%, #3f87ff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cadastro-logo img {
+    display: block;
+    margin: 1.5rem auto;
+    width: 220px;
+    height: auto;
+}
+
+.cadastro-branco {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 3rem 2rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.cad-tcadastro h1 {
+    color: #0096eb;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cadastro-inputi {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-group {
+    align-items: center;
+}
+
+.input-group .form-control {
+    height: 3rem;
+    font-size: 1.1rem;
+    border-radius: 18px;
+}
+
+#cad-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: url('imagens/open-eye.png') no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#cad-icon.hide {
+    background: url('imagens/close-eye.png') no-repeat center;
+    background-size: cover;
+}
+
+.cad-botao {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.cad-botao a {
+    display: inline-block;
+    padding: 0.7rem 6rem;
+    background: rgb(39, 187, 255);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cad-botao a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ffffff88;
+}
+
+.cad-tcadas {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #fff;
+    margin-top: 1.1rem;
+}
+
+.cad-tcadas a {
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cad-tcadas a:hover {
+    text-decoration: underline;
+}
+
+.cad-tcadas {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+
+/*↑↑↑↑↑↑↑↑↑↑↑↑ ------------------Cadastro --------------------------------- Cadastro ----------------------------------- Cadastro --------------- Cadastro-↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓ ------------------Login ------------------------------------ Login -------------------------------------- Login ------------------ Login----↓↓↓↓↓↓↓↓↓↓↓↓*/
+
+.cad-tlogin {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.login-branco {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 700px;
+    height: 30rem;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* centralizra verticalmente */
+    padding: 0 2rem;
+}
+
+.cad-tlogin {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 0%;
+}
+
+.cad-tlogin a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.cad-tlogin a:hover {
+    text-decoration: underline;
+    z-index: 3;
+}
+
+.cad-tloginn {
+    text-align: center;
+    font-size: 24px;
+    color: #0096eb;
+    top: 100%;
+    z-index: 3;
+    font-weight: bold;
+    margin-top: 10r
+}
+
+.cad-tloginn a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.cad-tloginn a:hover {
+    text-decoration: underline;
+    z-index: 3;
+}
+
+.cad-botao {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cad-botao button {
+    background: rgb(39, 187, 255);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 8rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.cad-botao button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffffff88;
+}
+
+
+/*↑↑↑↑↑↑↑↑↑↑↑↑ ------------------Login ------------------------------------ Login -------------------------------------- Login ------------------ Login----↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓ ------------------Clube ------------------------------------ Clube -------------------------------------- Clube ------------------ Clube----↓↓↓↓↓↓↓↓↓↓↓↓*/
+/* cor da faixa laranja e amarela #ff914d e #ffde59*/
+
+.header-club {
+    background: #2495ed;
+    padding: 0.1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9%;
+
+}
+
+.logo-header {
+    height: 100px;
+    /*tamanho da logo */
+    width: 160px;
+}
+
+.club {
+    color: orange;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.estrela{
+    color: yellow;
+    margin-left: 5px;
+    
+}
+
+
+.faixa_amarela {
+    position: absolute; 
+    top: 15%;          
+    left: 0;            
+    right: 0;          
+    width: 100%;        
+    padding: 1.5rem 0;  /* controla altura da faixa */
+    background: linear-gradient(to right,#ffde59 ,#ff914d);
+    border-radius: 0;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.texto_faixa{
+    color: white;
+    font-family: lovelo;
+    font-weight: 900;
+     font-size: clamp(1.5rem, 2.5vw, 2.8rem); /*muda o tamanho de acordo ao tamanho da pagina, menor ao maior */
+    text-align: center;
+    margin: 0;
+}
+
+
+.texto1{
+    width: 100%;
+    margin-top:10%;
+    z-index: 3;
+    text-decoration: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/*↑↑↑↑↑↑↑↑↑↑↑↑ ------------------Clube ------------------------------------ Clube -------------------------------------- Clube ------------------ Clube----↑↑↑↑↑↑↑↑↑↑↑↑*/
