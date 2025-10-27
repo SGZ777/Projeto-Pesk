@@ -418,12 +418,14 @@
 /* Deixar bordas arredondadas no grupo de senha */
 /* Campo de senha somente com o lado direito arredondado  ------- parte direita da senha redonda*/
 .input-group .form-control {
-    border-radius: 0 20px 20px 0 !important; /* arredonda apenas à direita */
+    border-radius: 0 20px 20px 0 !important;
+    /* arredonda apenas à direita */
 }
 
 /* Ícone (lado esquerdo) permanece quadrado */
 .input-group .input-group-text {
-    border-radius: 0 !important; /* sem arredondamento */
+    border-radius: 0 !important;
+    /* sem arredondamento */
 }
 
 
@@ -537,8 +539,6 @@ body {
     /* afasta da borda direita */
 }
 
-/*---------*/
-
 .secao-troca .row {
     display: flex !important;
     /* sobrescreve o Bootstrap */
@@ -567,13 +567,43 @@ body {
 
 .col-imagem3 {
     display: flex;
-    justify-content: flex-end; /* empurra pra direita */
+    justify-content: flex-end;
+    /* empurra pra direita */
 }
 
 .promo {
-    width: 50%;    /* ajuste de tamanho */
+    width: 50%;
+    /* ajuste de tamanho */
     height: auto;
-    margin-right: 5%; /* controla o espaço da borda direita */
+    margin-right: 5%;
+    /* controla o espaço da borda direita */
+}
+
+.club-botao {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.club-botao a {
+    display: inline-block;
+    padding: 0.7rem 6rem;
+    background: linear-gradient(to right, #ffde59, #ff914d);
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.club-botao a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ffffff88;
+}
+
+.fatura {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(10.8rem, 2vw, 0.6rem);
 }
 
 
@@ -613,3 +643,10 @@ body {
 }
 
 /*↑↑↑↑↑↑↑↑↑↑↑↑ ------------------ Acesso não autorizado ------------------------------------ Acesso não autorizado ----------------------------------------↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+.title-categorias{
+    justify-self: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}

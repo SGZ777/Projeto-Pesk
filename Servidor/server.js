@@ -3,13 +3,20 @@ const app = express()
 const port = 3000
 const path = require('path')
 
+app.use(express.json())
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
 const rotaCatalogo = require('./Back-end/rotas/catalogo')
 const rotaEntrar = require('./Back-end/rotas/login')
+const rotaCarrinho = require('./Back-end/rotas/carrinho')
+
 const logger = require('./Back-end/middlewares/logger')
-// const autenticar = require('./Back-end/middlewares/autenticacao')
 
 app.use('/catalogo', rotaCatalogo)
 app.use('/entrar', rotaEntrar)
+app.use('/carrinho', rotaCarrinho)
 
 app.use(express.json())
 app.use(logger)

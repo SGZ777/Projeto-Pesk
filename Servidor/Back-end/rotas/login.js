@@ -4,6 +4,7 @@ const fs = require('fs')
 const { console } = require('inspector')
 const path = require('path')
 const { json } = require('stream/consumers')
+const tokensAtivos = require('../middlewares/token')
 
 
 router.use(express.json())
@@ -11,7 +12,7 @@ router.use(express.json())
 function gerarToken() {
     return Math.random().toString(36).substr(2) + Date.now().toString(36);
 }
-
+ 
 router.post('/login', (req, res) => {
     const { email, password } = req.body
     console.log(email, password)
@@ -29,7 +30,6 @@ router.post('/login', (req, res) => {
         if (!usuario) return res.status(401).json({ error: "Usuário ou senha incorretos" })
 
         const token = gerarToken()
-        const tokensAtivos = {}
         tokensAtivos[token] = usuario.id
         res.json({ token })
     })
@@ -38,7 +38,6 @@ router.post('/login', (req, res) => {
 router.post('/cadastro', (req, res) => {
     const { nomeCompleto, email, password } = req.body;
     console.log('sla', email)
-    const tokensAtivos = {}
 
     fs.readFile('./Back-end/data/users.json', 'utf8', (err, data) => {
         if (err) {

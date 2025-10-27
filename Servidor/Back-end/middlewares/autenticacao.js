@@ -1,23 +1,19 @@
+const tokensAtivos = require('./token')
 
-const tokensAtivos = {}
+function autenticar(req, res, next) {
+    const authHeader = req.headers['authorization'];
+    if (!authHeader) return res.status(401).json({ error: 'Header Authorization ausente' });
 
-const autenticar = (req, res, next) => {
-    const authHeader = req.headers['authorization']
-
-    if (!authHeader) {
-        console.error('Não autorizado: header ausente')
-        return res.status(401).redirect('/login.html')
+    const parts = authHeader.split(' ');
+    if (parts.length !== 2 || parts[0] !== 'Bearer') {
+        return res.status(401).json({ error: 'Formato do Authorization inválido' });
     }
 
-    const token = authHeader.split(' ')[1] || authHeader
+    const token = parts[1];
+    if (!tokensAtivos[token]) return res.status(401).json({ error: 'Token inválido ou expirado' });
 
-    if (tokensAtivos[token]) {
-        req.usuarioId = tokensAtivos[token]
-        next()
-    } else {
-        console.error('Não autorizado: token inválido')
-        return res.status(401).redirect('/login.html')
-    }
+    req.usuarioId = tokensAtivos[token]; // id do usuário logado
+    next();
 }
 
 module.exports = autenticar;

@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nome</title>
-    <link rel="icon" href="imagens/icon.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imagens/icones/icon.png" type="image/png">
+    <title>[nome]</title>
+    <link rel="icon" href="../imagens/icones/icon.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../imagens/icones/icon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -15,13 +15,13 @@
 
 <body style="background-color: rgb(250, 250, 250);">
     <header class="p-3 text-bg-primary">
-        <div class="container" >
+        <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
                 </a>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li>
-                        <img src="imagens/icones/logo.png" class="logo-header" alt="">
+                        <img src="../imagens/icones/logo.png" class="logo-header" alt="">
                     </li>
                 </ul>
                 <div class="alinhar-searchbar"></div>
@@ -30,9 +30,9 @@
                         aria-label="Search">
                 </form>
                 <div class="text-end">
-                    <a href="peskclub.html"><button type="button" class="btn btn-warning me-2">Assine-já</button></a>
-                    <a href="cadastro.html"><img src="imagens/icones/icon-perfil.png" class="icon-perfil"></a>
-                    <a href="carrinho.html"><img src="imagens/icones/icon-carrinho.png" class="icon-carrinho"></a>
+                    <a href="../peskclub.html"><button type="button" class="btn btn-warning me-2">Assine-já</button></a>
+                    <a href="../cadastro.html"><img src="../imagens/icones/icon-perfil.png" class="icon-perfil"></a>
+                    <a href="../carrinho.html"><img src="../imagens/icones/icon-carrinho.png" class="icon-carrinho"></a>
                 </div>
             </div>
         </div>
@@ -43,18 +43,15 @@
                 <div id="thumb-gallery" class="list-group" role="tablist">
                     <button class="list-group-item list-group-item-action active"
                         data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0">
-                        <img src="imagens/Produtos/imagens[0]" class="d-block w-100"
-                            alt="Vara Shimano - Padrão">
+                        <img src="../imagens/Produtos/imagens[0]" class="d-block w-100" alt="Vara Shimano - Padrão">
                     </button>
                     <button class="list-group-item list-group-item-action" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="1">
-                        <img src="imagens/Produtos/imagens[1]" class="d-block w-100"
-                            alt="Vara Shimano - Detalhe 1">
+                        <img src="../imagens/Produtos/imagens[1]" class="d-block w-100" alt="Vara Shimano - Detalhe 1">
                     </button>
                     <button class="list-group-item list-group-item-action" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="2">
-                        <img src="imagens/Produtos/imagens[2]" class="d-block w-100"
-                            alt="Vara Shimano - Detalhe 2">
+                        <img src="../imagens/Produtos/imagens[2]" class="d-block w-100" alt="Vara Shimano - Detalhe 2">
                     </button>
                 </div>
             </div>
@@ -64,15 +61,14 @@
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="imagens/Produtos/imagens[0]" class="d-block w-100"
-                                alt="Vara Shimano - Padrão">
+                            <img src="../imagens/Produtos/imagens[0]" class="d-block w-100" alt="Vara Shimano - Padrão">
                         </div>
                         <div class="carousel-item">
-                            <img src="imagens/Produtos/imagens[1]" class="d-block w-100"
+                            <img src="../imagens/Produtos/imagens[1]" class="d-block w-100"
                                 alt="Vara Shimano - Detalhe 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="imagens/Produtos/imagens[2]" class="d-block w-100"
+                            <img src="../imagens/Produtos/imagens[2]" class="d-block w-100"
                                 alt="Vara Shimano - Detalhe 2">
                         </div>
                     </div>
@@ -89,9 +85,10 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <h3>nome</h3>
-                <p class="h6">descricao</p>
-                <h1> preco <button type="button" class="btn btn-primary btn-lg" style="font-size: 33px ;"> Adicionar
+                <h3>[nome]</h3>
+                <p class="h6">[descricao]</p>
+                <h1> R$[preco] <button type="button" id="botaoAdicionarAoCarrinho" class="btn btn-primary btn-lg"
+                        style="font-size: 33px ;"> Adicionar
                         ao carrinho. </button>
                 </h1>
 
@@ -101,11 +98,11 @@
     </div>
 
 
-    <footer class="py-3 text-bg-primary" style="font-weight: bold;">
+    <footer class="py-3 text-bg-primary">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="home.html" class="nav-link px-2 " style="color: white;">Home</a></li>
+            <li class="nav-item"><a href="../home.html" class="nav-link px-2 " style="color: white;">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 " style="color: white;">Catalogo</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 " style="color: white;">PeskClub</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 " style="color: white;">PeskClube</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 " style="color: white;">PFQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 " style="color: white;">Sobre</a></li>
         </ul>
@@ -118,6 +115,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById('botaoAdicionarAoCarrinho').addEventListener('click', () => {
+            const token = localStorage.getItem('token'); // token do usuário logado
+            const produtoId = parseInt(window.location.pathname.split('/').pop()) // exemplo, pega dinamicamente no seu HTML
+
+            fetch('http://localhost:3000/carrinho/adicionar', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify({ produtoId })
+            })
+                .then(res => res.json())
+                .then(data => alert(data.mensagem || data.error))
+                .catch(err => console.error(err));
+        })
+
+    </script>
+
 
     <style>
         .py-3 {

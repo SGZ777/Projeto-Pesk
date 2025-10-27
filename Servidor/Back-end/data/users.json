@@ -3,126 +3,157 @@
     "id": 1,
     "email": "ana.silva@gmail.com",
     "password": "senha123",
-    "nome": "Ana Silva"
+    "nome": "Ana Silva",
+    "produtos": [
+      15,
+      16
+    ]
   },
   {
     "id": 2,
     "email": "bruno.souza@hotmail.com",
     "password": "abc123",
-    "nome": "Bruno Souza"
+    "nome": "Bruno Souza",
+    "produtos": []
   },
   {
     "id": 3,
     "email": "carla.mendes@yahoo.com",
     "password": "123456",
-    "nome": "Carla Mendes"
+    "nome": "Carla Mendes",
+    "produtos": []
   },
   {
     "id": 4,
     "email": "daniel.alves@gmail.com",
     "password": "senha456",
-    "nome": "Daniel Alves"
+    "nome": "Daniel Alves",
+    "produtos": []
   },
   {
     "id": 5,
     "email": "eduardo.lima@outlook.com",
     "password": "pass789",
-    "nome": "Eduardo Lima"
+    "nome": "Eduardo Lima",
+    "produtos": []
   },
   {
     "id": 6,
     "email": "fernanda.costa@gmail.com",
     "password": "minhasenha",
-    "nome": "Fernanda Costa"
+    "nome": "Fernanda Costa",
+    "produtos": []
   },
   {
     "id": 7,
     "email": "gabriel.santos@hotmail.com",
     "password": "senha321",
-    "nome": "Gabriel Santos"
+    "nome": "Gabriel Santos",
+    "produtos": []
   },
   {
     "id": 8,
     "email": "helen.rocha@yahoo.com",
     "password": "abc789",
-    "nome": "Helen Rocha"
+    "nome": "Helen Rocha",
+    "produtos": []
   },
   {
     "id": 9,
     "email": "igor.pereira@gmail.com",
     "password": "teste123",
-    "nome": "Igor Pereira"
+    "nome": "Igor Pereira",
+    "produtos": []
   },
   {
     "id": 10,
     "email": "julia.oliveira@outlook.com",
     "password": "senha999",
-    "nome": "Júlia Oliveira"
+    "nome": "Júlia Oliveira",
+    "produtos": []
   },
   {
     "id": 11,
     "email": "kaio.martins@gmail.com",
     "password": "123abc",
-    "nome": "Kaio Martins"
+    "nome": "Kaio Martins",
+    "produtos": []
   },
   {
     "id": 12,
     "email": "larissa.gomes@hotmail.com",
     "password": "abc456",
-    "nome": "Larissa Gomes"
+    "nome": "Larissa Gomes",
+    "produtos": []
   },
   {
     "id": 13,
     "email": "marcos.dias@yahoo.com",
     "password": "senhaabc",
-    "nome": "Marcos Dias"
+    "nome": "Marcos Dias",
+    "produtos": []
   },
   {
     "id": 14,
     "email": "natalia.ramos@gmail.com",
     "password": "987654",
-    "nome": "Natália Ramos"
+    "nome": "Natália Ramos",
+    "produtos": []
   },
   {
     "id": 15,
     "email": "otavio.freitas@hotmail.com",
     "password": "qwerty",
-    "nome": "Otávio Freitas"
+    "nome": "Otávio Freitas",
+    "produtos": []
   },
   {
     "id": 16,
     "email": "paula.barros@outlook.com",
     "password": "senha2024",
-    "nome": "Paula Barros"
+    "nome": "Paula Barros",
+    "produtos": []
   },
   {
     "id": 17,
     "email": "rafael.ferreira@gmail.com",
     "password": "abc2025",
-    "nome": "Rafael Ferreira"
+    "nome": "Rafael Ferreira",
+    "produtos": []
   },
   {
     "id": 18,
     "email": "sabrina.lopes@yahoo.com",
     "password": "minhapass",
-    "nome": "Sabrina Lopes"
+    "nome": "Sabrina Lopes",
+    "produtos": []
   },
   {
     "id": 19,
     "email": "thiago.carvalho@gmail.com",
     "password": "segredo",
-    "nome": "Thiago Carvalho"
+    "nome": "Thiago Carvalho",
+    "produtos": []
   },
   {
     "id": 20,
     "email": "vanessa.moraes@hotmail.com",
     "password": "senha777",
-    "nome": "Vanessa Moraes"
+    "nome": "Vanessa Moraes",
+    "produtos": []
   },
   {
     "id": 21,
     "email": "souzafugikawamateus@gmail.com",
     "password": "080908",
-    "nome": "Mateus Fugikawa"
+    "nome": "Mateus Fugikawa",
+    "produtos": [
+      15,
+      15,
+      15,
+      15,
+      15,
+      15
+    ]
   }
 ]

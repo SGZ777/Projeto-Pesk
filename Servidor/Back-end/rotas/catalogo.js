@@ -28,14 +28,25 @@ router.get('/:id', (req, res) => {
                     res.status(500).send('Erro ao carregar página.');
                     return;
                 }
-                let paginaFinal = produto
-                paginaFinal = paginaFinal.replaceAll('nome', idCerta.nome)
-                paginaFinal = paginaFinal.replaceAll('descricao', idCerta.descricao)
-                paginaFinal = paginaFinal.replaceAll('preco', idCerta.preco)
-                paginaFinal = paginaFinal.replaceAll('imagens[0]', idCerta.imagens[0])
-                paginaFinal = paginaFinal.replaceAll('imagens[1]', idCerta.imagens[1])
-                paginaFinal = paginaFinal.replaceAll('imagens[2]', idCerta.imagens[2])
+                
+                let paginaFinal = null 
+                
+                try {
+                    paginaFinal = produto
+                    paginaFinal = paginaFinal.replaceAll('[nome]', idCerta.nome)
+                    paginaFinal = paginaFinal.replaceAll('[descricao]', idCerta.descricao)
+                    paginaFinal = paginaFinal.replaceAll('[preco]', idCerta.preco)
+                    paginaFinal = paginaFinal.replaceAll('imagens[0]', idCerta.imagens[0])
+                    paginaFinal = paginaFinal.replaceAll('imagens[1]', idCerta.imagens[1])
+                    paginaFinal = paginaFinal.replaceAll('imagens[2]', idCerta.imagens[2])
+                } catch (error) {
+                    
+                }
 
+                if (!paginaFinal) {
+                    // res.status(500).send('Erro ao processar página.');
+                    return;
+                }
                 res.status(200).send(paginaFinal)
             })
         } catch (error) {
