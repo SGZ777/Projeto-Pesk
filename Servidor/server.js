@@ -4,9 +4,9 @@ const port = 3000
 const path = require('path')
 
 app.use(express.json())
-var bodyParser = require('body-parser');
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+var bodyParser = require('body-parser')
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
 
 const rotaCatalogo = require('./Back-end/rotas/catalogo')
 const rotaEntrar = require('./Back-end/rotas/login')

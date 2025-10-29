@@ -31,12 +31,12 @@
 
       <div class="input-group mb-4">
         <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
-        <input type="text" id="Email" class="form-control" placeholder="Email" aria-label="Email">
+        <input type="text" id="email" class="form-control" placeholder="Email" aria-label="Email">
       </div>
 
       <div class="input-group mb-4 position-relative">
         <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
-        <input type="password" id="password" class="form-control" placeholder="Senha" id="cad-password">
+        <input type="password" id="cad-password" class="form-control" placeholder="Senha" >
         <div id="cad-icon" onclick="showhide()"></div>
       </div>
 
@@ -62,11 +62,11 @@
         icon.classList.remove('hide');
       }
     }
-
+// mateus tu tinha esquecido de trocar o id do input, eu deixei igual e o cadastro funcionou 
     async function cadastrar() {
       const nomeCompleto = document.getElementById('nomeCompleto').value
       const email = document.getElementById('email').value
-      const password = document.getElementById('password').value
+      const password = document.getElementById('cad-password').value
       const mensagem = document.getElementById('mensagem')
 
       try {
