@@ -86,8 +86,8 @@
                 subtotal += p.preco * p.quantidade;
                 const card = document.createElement('div');
                 card.className = 'col-12 col-md-8';
-                card.innerHTML = `
-                <div class="card p-3 shadow-sm d-flex flex-row align-items-center justify-content-between">
+                card.innerHTML = 
+                `<div class="card p-3 shadow-sm d-flex flex-row align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
                         <img src="/imagens/produtos/${p.imagens[0]}" alt="${p.nome}" class="img-fluid rounded me-3" style="width:80px;height:80px;">
                         <div>
@@ -102,8 +102,7 @@
                         <button class="btn btn-outline-secondary btn-sm" onclick="alterarQtd(${p.id}, ${p.quantidade + 1})">+</button>
                         <button class="btn btn-link text-danger ms-3" onclick="remover(${p.id})">Remover</button>
                     </div>
-                </div>
-            `;
+                </div>`;
                 lista.appendChild(card);
             });
 
@@ -132,7 +131,6 @@
             });
             carregarCarrinho();
         }
-
         async function remover(produtoId) {
             await fetch(API + '/remover', {
                 method: 'POST',
@@ -141,7 +139,6 @@
             });
             carregarCarrinho();
         }
-
         window.onload = carregarCarrinho;
     </script>
 </body>
