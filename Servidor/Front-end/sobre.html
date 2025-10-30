@@ -1,73 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Pesk</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imagens/icones/icon.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/lovelo" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre-nós</title>
+<link rel="icon" href="imagens/icones/icon.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/lovelo" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Fundo aquário atrás de tudo */
+.aquario {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #0077b6, #00b4d8, #90e0ef);
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* Peixes animados */
+.peixe {
+    position: absolute;
+    width: 100px;
+    animation: nadar 20s linear infinite;
+}
+
+@keyframes nadar {
+    0% { transform: translateX(-150px) scaleX(1); }
+    49% { transform: translateX(calc(100vw + 150px)) scaleX(1); }
+    50% { transform: translateX(calc(100vw + 150px)) scaleX(-1); }
+    100% { transform: translateX(-150px) scaleX(-1); }
+}
+
+/* Bolhas */
+.bolha {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    animation: bolha 10s linear infinite;
+}
+
+@keyframes bolha {
+    0% { transform: translateY(100vh) scale(0.3); opacity: 0; }
+    30% { opacity: 1; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+
+/* Conteúdo na frente */
+.conteudo {
+    flex: 1;
+    position: relative;
+    z-index: 10;
+    color: white;
+    padding-bottom: 50px;
+}
+
+/* Footer sempre visível */
+footer {
+    background-color: #0096eb;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    position: relative;
+    z-index: 10;
+}
+</style>
 </head>
 
-<body class="pagina-sobre">
-    <!-- header -->
-    <header class="header-club">
-        <a href="home.html"><img src="imagens/icones/logo.png" class="logo-header" alt="Logo"></a>
+<body class="body-home">
+
+<!-- Fundo aquário + peixes -->
+<div class="aquario">
+    <img src="imagens/icones/peixe-fundo.png" class="peixe">
+    <img src="imagens/icones/peixe-fundo.png" class="peixe">
+    <img src="imagens/icones/peixe-fundo.png" class="peixe">
+</div>
+
+<!-- Conteúdo -->
+<div class="conteudo">
+
+    <!-- Header -->
+    <header class="header-club py-3 text-center" style="background-color: transparent;">
+        <a href="home.html">
+            <img src="imagens/icones/logo.png" style="width:150px; height:auto;" alt="Logo">
+        </a>
     </header>
 
-    <div class="container my-5">
-        <div class="row justify-content-center">
+    <!-- Texto principal -->
+    <div class="sobre-branco">
+    
+    <div class="container">
+        <div class="row justify-content-center" style="color: black; font-size:1.2rem;">
             <div class="col-12 col-md-8">
-
-                <h2 class="texto-geral">Sobre Nós</h2>
-
-                <p class="texto1-sobre">
-                    <strong>O Pesk nasceu da paixão pela pesca e pelo contato com a natureza. Nosso objetivo é unir
-                        pescadores de todos os níveis,
-                        dos iniciantes aos mais experientes, em uma comunidade que compartilha conhecimento,
-                        experiências e boas histórias à beira d’água.</strong>
-                </p>
-
-                <p class="texto1-sobre">
-                    <strong> Aqui no Pesk, você encontra equipamentos de qualidade, dicas exclusivas e o Pesk Club,
-                        nosso serviço de assinatura que oferece:</strong>
-                </p>
-
-                <ul class="lista-sobre">
-                    <strong>
-                        <li>Mapeamento de peixes e locais de pesca</li>
-                        <li>Brinde mensal exclusivo</li>
-                        <li>10% de desconto em todo o site</li>
-                    </strong>
+                <h2><strong>Sobre Nós</strong></h2>
+                <p>O Pesk nasceu da paixão pela pesca e pelo contato com a natureza. Nosso objetivo é unir pescadores de todos os níveis, dos iniciantes aos mais experientes, em uma comunidade que compartilha conhecimento, experiências e boas histórias à beira d’água.</p>
+                <p>Aqui no Pesk, você encontra equipamentos de qualidade, dicas exclusivas e o Pesk Club, nosso serviço de assinatura que oferece:
+                </strong></p>
+                <ul>
+                    <li>Mapeamento de peixes e locais de pesca</li>
+                    <li>Brinde mensal exclusivo</li>
+                    <li>10% de desconto em todo o site</li>
                 </ul>
-
-                <p class="texto-geral">
-                    <strong>Mais do que uma loja, somos uma comunidade que acredita que pescar é mais do que um hobby é
-                        um estilo de vida.</strong>
-                </p>
-
+                <p><strong>Mais do que uma loja, somos uma comunidade que acredita que pescar é mais do que um hobby, é um estilo de vida</strong></p>
             </div>
         </div>
     </div>
+</div>
 
-    </div>
-    </div class="secao-troca">
 
-    <footer class="py-3 text-bg-primary" style="font-weight: bold; background-color: #0096eb !important;">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="home.html" class="nav-link px-2 " style="color: white;">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 " style="color: white;">Catalogo</a></li>
-            <li class="nav-item"><a href="peskclub.html" class="nav-link px-2 " style="color: white;">PeskClub</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 " style="color: white;">PFQs</a></li>
-            <li class="nav-item"><a href="sobre.html" class="nav-link px-2 " style="color: white;">Sobre</a></li>
-        </ul>
-        <p class="text-center " style="color: white;">© 2025 Pesk</p>
-    </footer>
+</div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="home.html" class="nav-link px-2" style="color: white;">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">Catalogo</a></li>
+        <li class="nav-item"><a href="peskclub.html" class="nav-link px-2" style="color: white;">PeskClub</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2" style="color: white;">PFQs</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link px-2" style="color: white;">Sobre</a></li>
+    </ul>
+    <p>© 2025 Pesk</p>
+</footer>
+
+<!-- Script JS -->
+<script>
+// Peixes random
+const peixes = document.querySelectorAll('.peixe');
+peixes.forEach(peixe => {
+    peixe.style.top = `${Math.random() * 80 + 20}%`;
+    peixe.style.animationDuration = `${10 + Math.random() * 20}s`;
+});
+
+// Bolhas
+const aquario = document.querySelector('.aquario');
+for (let i = 0; i < 20; i++) {
+    const bolha = document.createElement('div');
+    bolha.classList.add('bolha');
+    const size = Math.random() * 20 + 10;
+    bolha.style.width = `${size}px`;
+    bolha.style.height = `${size}px`;
+    bolha.style.left = `${Math.random() * 100}%`;
+    bolha.style.animationDuration = `${6 + Math.random() * 4}s`;
+    bolha.style.animationDelay = `${Math.random() * 5}s`;
+    aquario.appendChild(bolha);
+}
+</script>
 
 </body>
-
 </html>
