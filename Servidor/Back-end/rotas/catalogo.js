@@ -8,7 +8,7 @@ router.use(express.static(path.join(__dirname, 'Front')))
 router.get('/', (req, res) => {
     res.status(200).sendFile(path.join(__dirname, 'Front', 'catalogo.html'))
 })
-
+// Entra em uma rota de acordo coma id do produto
 router.get('/:id', (req, res) => {
     fs.readFile('./Back-end/data/catalogo.json', 'utf8', (err, catalogos) => {
         if (err) {
@@ -19,6 +19,7 @@ router.get('/:id', (req, res) => {
         try {
             const catalogo = JSON.parse(catalogos)
             const id = parseInt(req.params.id)
+            // Verifica a id do parametro
             const idCerta = catalogo.find(function (produto) {
                 return produto.id === id
             })
@@ -29,16 +30,22 @@ router.get('/:id', (req, res) => {
                     return;
                 }
                 
+                // Cria a parcela e arredonda
+                const p5 = idCerta.preco/5
+
                 let paginaFinal = null 
                 
+
+                // Substitui os elementos na pagina modelo
                 try {
                     paginaFinal = produto
                     paginaFinal = paginaFinal.replaceAll('[nome]', idCerta.nome)
                     paginaFinal = paginaFinal.replaceAll('[descricao]', idCerta.descricao)
-                    paginaFinal = paginaFinal.replaceAll('[preco]', idCerta.preco)
+                    paginaFinal = paginaFinal.replaceAll('[preco]', idCerta.preco.toFixed(2))
                     paginaFinal = paginaFinal.replaceAll('imagens[0]', idCerta.imagens[0])
                     paginaFinal = paginaFinal.replaceAll('imagens[1]', idCerta.imagens[1])
                     paginaFinal = paginaFinal.replaceAll('imagens[2]', idCerta.imagens[2])
+                    paginaFinal = paginaFinal.replaceAll('[parcelas]', p5.toFixed(2))
                 } catch (error) {
                     
                 }

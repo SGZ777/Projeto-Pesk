@@ -12,8 +12,9 @@ router.use(express.json())
 function gerarToken() {
     return Math.random().toString(36).substr(2) + Date.now().toString(36);
 }
- 
+
 router.post('/login', (req, res) => {
+    // Coleta os dados enviados do FrontEnd
     const { email, password } = req.body
     console.log(email, password)
 
@@ -24,11 +25,13 @@ router.post('/login', (req, res) => {
             return
         }
         const usuarios = JSON.parse(users)
+        // Verifica se o usuario coincide com alfum do banco de dados do Json
         const usuario = usuarios.find(function (user) {
             return (user.email === email && user.password === password)
         })
         if (!usuario) return res.status(401).json({ error: "Usuário ou senha incorretos" })
 
+        // Gera o Token para verificar o login do usuario
         const token = gerarToken()
         tokensAtivos[token] = usuario.id
         res.json({ token })
@@ -36,6 +39,7 @@ router.post('/login', (req, res) => {
 })
 
 router.post('/cadastro', (req, res) => {
+    // coleta os dados Vindo do frontEnd
     const { nomeCompleto, email, password } = req.body;
     console.log('sla', email)
 
@@ -47,6 +51,7 @@ router.post('/cadastro', (req, res) => {
         try {
             const usuarios = JSON.parse(data);
             console.log('sla', nomeCompleto)
+            // Verifica se usuario já existe
             if (usuarios.some(u => u.email === email)) {
                 return res.status(400).json({ error: 'Email já cadastrado' });
             }
@@ -54,11 +59,14 @@ router.post('/cadastro', (req, res) => {
                 id: usuarios.length + 1, email: email, password: password, nome: nomeCompleto
             }
             usuarios.push(novoUsuario)
+            // Adiciona o novo user ao Json
             fs.writeFile('./Back-end/data/users.json', JSON.stringify(usuarios, null, 2), err => {
                 if (err) {
                     console.error(`Falha ao escrever o arquivo: ${err}`);
                     return res.status(500).json({ error: 'Falha ao criar usuário' });
                 }
+
+                // Gera o Token para verificar o login do usuario
                 const token = gerarToken();
                 tokensAtivos[token] = novoUsuario.id;
                 res.json({ token });

@@ -36,9 +36,13 @@
 
       <div class="input-group mb-4 position-relative">
         <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
-        <input type="password" id="cad-password" class="form-control" placeholder="Senha" >
-        <div id="cad-icon" onclick="showhide()"></div>
+        <input type="password" id="cad-password" class="form-control" placeholder="Senha">
+        <i class="bi bi-eye-fill" id="toggleSenhaCad"
+           style="position:absolute; right:15px; top:50%; transform:translateY(-50%); cursor:pointer; z-index:8"></i>
       </div>
+      
+
+      
 
       <div class="cad-botao">
         <button type="submit" onclick="cadastrar()">Entrar</button>
@@ -50,19 +54,17 @@
   <p class="cad-tcadas">Já possui conta? <a href="login.html">Entrar</a></p>
 
   <script>
-    const password = document.getElementById('cad-password');
-    const icon = document.getElementById('cad-icon');
+  const senhaCad = document.getElementById("cad-password");
+const toggleCad = document.getElementById("toggleSenhaCad");
 
-    function showhide() {
-      if (password.type === 'password') {
-        password.type = 'text';
-        icon.classList.add('hide');
-      } else {
-        password.type = 'password';
-        icon.classList.remove('hide');
-      }
-    }
-// mateus tu tinha esquecido de trocar o id do input, eu deixei igual e o cadastro funcionou 
+toggleCad.addEventListener("click", () => {
+  const tipo = senhaCad.getAttribute("type") === "password" ? "text" : "password";
+  senhaCad.setAttribute("type", tipo);
+  toggleCad.classList.toggle("bi-eye-fill");
+  toggleCad.classList.toggle("bi-eye-slash-fill");
+});
+
+
     async function cadastrar() {
       const nomeCompleto = document.getElementById('nomeCompleto').value
       const email = document.getElementById('email').value

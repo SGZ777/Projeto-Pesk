@@ -25,7 +25,7 @@ router.get('/', autenticar, (req, res) => {
             const counts = {};
             usuario.produtos.forEach(id => counts[id] = (counts[id] || 0) + 1);
 
-            // Monta lista detalhada
+            // Monta lista detalhada, caso haja produtos repetidos eles são contados no mesmo 
             const carrinhoDetalhado = Object.entries(counts).map(([id, qtd]) => {
                 const produto = catalogo.find(p => p.id === parseInt(id));
                 if (!produto) return null;
@@ -44,6 +44,7 @@ router.post('/adicionar', autenticar, (req, res) => {
         return res.status(400).json({ mensagem: 'Cliente ou produto não informado.' });
     }
 
+    // Adiciona um novo produto ao carrinho, podendo ser repetido
 
     fs.readFile('./Back-end/data/users.json', 'utf8', (err, data) => {
         if (err) {
@@ -57,7 +58,7 @@ router.post('/adicionar', autenticar, (req, res) => {
 
         if (!cliente) return res.status(404).json({ mensagem: 'Cliente não encontrado.' });
 
-        // Evita adicionar produto duplicado
+
         cliente.produtos.push(produtoId);
 
         fs.writeFile('./Back-end/data/users.json', JSON.stringify(clientes, null, 2), 'utf8', (err) => {

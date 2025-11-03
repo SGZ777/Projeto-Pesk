@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nome": "Vara de Pesca Shimano FX 6'6",
-    "preco": 249.90,
+    "preco": 249.99,
     "descricao": "A Vara Shimano FX 6'6\" é perfeita para quem busca desempenho, leveza e resistência. Fabricada em carbono de alta qualidade, oferece excelente sensibilidade para detectar toques sutis dos peixes. Ideal para pescarias em rios, lagos e represas, proporciona arremessos longos e precisos. Seu cabo em EVA garante firmeza e conforto durante o uso prolongado. Compatível com carretilhas e molinetes de diversas marcas.",
     "imagens": [
       "Varas/varaShimanoFX6-6/VaraShimano66.png",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "nome": "Molinete Marine Sports Arena 4000",
-    "preco": 199.50,
+    "preco": 199.59,
     "descricao": "O Molinete Marine Sports Arena 4000 combina força e suavidade em um único equipamento. Conta com 5 rolamentos de alta durabilidade, carretel de alumínio reforçado e sistema anti-reverso instantâneo. Ideal para pescadores que valorizam desempenho e confiabilidade, é indicado tanto para água doce quanto salgada. O design ergonômico e o recolhimento rápido tornam a experiência de pesca mais confortável e eficiente.",
     "imagens": [
       "Molinets/molinetearena4000/img1.png",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "nome": "Linha Shimano Power Pro Super 8x 0,15mm (4,5kg) - 150 Metros",
-    "preco": 159.90,
+    "preco": 159.99,
     "descricao": "A Linha Shimano Power Pro Super 0,15mm é referência em resistência e desempenho. Produzida com fibras de Spectra, oferece alta sensibilidade, baixa elasticidade e maior capacidade de arremesso. Ideal para pescarias onde é necessário sentir o menor toque do peixe. Possui revestimento especial que reduz o atrito nos passadores, aumentando a durabilidade e garantindo maior suavidade nas recolhidas.",
     "imagens": [
       "Linhas/Linha3/img1.png",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "nome": "Isca Artificial Rapala X-Rap 08",
-    "preco": 89.90,
+    "preco": 89.99,
     "descricao": "A Isca Rapala X-Rap 08 é uma das preferidas entre pescadores esportivos. Sua ação flutuante e design hidrodinâmico proporcionam um nado extremamente realista, imitando perfeitamente o movimento de um peixe ferido. Ideal para capturar tucunarés, robalos e traíras, possui garatéias afiadas e corpo reforçado. Pode ser usada em diferentes profundidades, garantindo ataques certeiros em qualquer condição de pesca.",
     "imagens": [
       "Iscas/Isca4/img1.png",
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "nome": "Caixa de Pesca Plano 6203",
-    "preco": 129.00,
+    "preco": 129.99,
     "descricao": "A Caixa de Pesca Plano 6203 é a solução ideal para quem busca organização e praticidade. Fabricada em material resistente, possui múltiplos compartimentos ajustáveis para armazenar iscas, anzóis, chumbadas e outros acessórios. Sua alça retrátil e trava de segurança garantem transporte fácil e seguro. Ideal tanto para pescadores iniciantes quanto experientes, mantendo todo o equipamento bem protegido.",
     "imagens": [
       "Outros/Caixa5/img1.png",

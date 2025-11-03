@@ -10,10 +10,11 @@ function autenticar(req, res, next) {
     }
 
     const token = parts[1];
-    if (!tokensAtivos[token]) return res.status(401).json({ error: 'Token inválido ou expirado' });
+    if (!tokensAtivos[token]) return res.status(401).json({ error: 'É necessário fazer login!' });
 
     req.usuarioId = tokensAtivos[token]; // id do usuário logado
     next();
 }
+// Verifica se user está logado para paginas protegidas
 
 module.exports = autenticar;
