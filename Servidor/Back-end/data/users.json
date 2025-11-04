@@ -141,21 +141,5 @@
     "password": "senha777",
     "nome": "Vanessa Moraes",
     "produtos": []
-  },
-  {
-    "id": 21,
-    "email": "souzafugikawamateus@gmail.com",
-    "password": "080908",
-    "nome": "Mateus Fugikawa",
-    "produtos": []
-  },
-  {
-    "id": 22,
-    "email": "arthursgz77@gmail.com",
-    "password": "1234567",
-    "nome": "bilau",
-    "produtos": [
-      49
-    ]
   }
 ]

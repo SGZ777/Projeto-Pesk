@@ -16,9 +16,9 @@
     "preco": 199.59,
     "descricao": "O Molinete Marine Sports Arena 4000 combina força e suavidade em um único equipamento. Conta com 5 rolamentos de alta durabilidade, carretel de alumínio reforçado e sistema anti-reverso instantâneo. Ideal para pescadores que valorizam desempenho e confiabilidade, é indicado tanto para água doce quanto salgada. O design ergonômico e o recolhimento rápido tornam a experiência de pesca mais confortável e eficiente.",
     "imagens": [
-      "Molinets/molinetearena4000/img1.png",
-      "Molinets/molinetearena4000/img2.png",
-      "Molinets/molinetearena4000/img3.png"
+      "Molinets/Molinete2/img1.png",
+      "Molinets/Molinete2/img2.png",
+      "Molinets/Molinete2/img3.png"
     ]
   },
   {
@@ -82,9 +82,9 @@
     "preco": 49.90,
     "descricao": "O Alicate de Bico Inox 6\" é uma ferramenta indispensável para qualquer pescador. Produzido em aço inoxidável de alta qualidade, possui corte preciso e resistência à corrosão. Ideal para retirar anzóis, cortar linhas e fazer pequenos ajustes no equipamento. Seu cabo ergonômico com grip emborrachado garante firmeza e conforto durante o uso, mesmo em condições de umidade.",
     "imagens": [
-      "Outros/Alicate8/img1.png",
-      "Outros/Alicate8/img2.png",
-      "Outros/Alicate8/img3.png"
+      "Outros/Allicate8/img1.png",
+      "Outros/Allicate8/img2.png",
+      "Outros/Allicate8/img3.png"
     ]
   },
   {
@@ -236,9 +236,9 @@
     "preco": 119.90,
     "descricao": "A Lanterna de Cabeça Recarregável 300lm é perfeita para pescarias noturnas e atividades ao ar livre. Possui feixe de luz ajustável, bateria recarregável via USB e até 8 horas de autonomia. Seu design leve e confortável permite o uso prolongado sem incômodos. Resistente à água e com diferentes modos de iluminação, é um item indispensável no seu kit de pesca.",
     "imagens": [
-      "Outros/Lanterna22/img1.jpg",
-      "Outros/Lanterna22/img2.jpg",
-      "Outros/Lanterna22/img3.jpg"
+      "Outros/Lanterna22/img1.png",
+      "Outros/Lanterna22/img2.png",
+      "Outros/Lanterna22/img3.png"
     ]
   },
   {
@@ -456,9 +456,9 @@
     "preco": 199.90,
     "descricao": "A Linha Daiwa J-Braid x8 é fabricada com fibras japonesas de alta resistência. Possui 8 tramas trançadas que garantem suavidade e resistência à abrasão. Diâmetro de 0,18mm, suporta até 9 kg. Ideal para arremessos longos e máxima sensibilidade nas fisgadas. Uma das linhas mais elogiadas pelos pescadores esportivos.",
     "imagens": [
-      "Linhas/Isca42/img1.png",
-      "Linhas/Isca42/img2.png",
-      "Linhas/Isca42/img3.png"
+      "Linhas/Linha42/img1.png",
+      "Linhas/Linha42/img2.png",
+      "Linhas/Linha42/img3.png"
     ]
   },
   {
@@ -529,7 +529,7 @@
   },
   {
     "id": 49,
-    "nome": "Assinatura Pesk Club",
+    "nome": "Assinatura Pesk Club - 1 mês",
     "preco": 79.90,
     "descricao": "ASSINE O PESK CLUB E LEVE SUA PAIXÃO PELA PESCA A OUTRO NÍVEL!",
     "imagens": [
