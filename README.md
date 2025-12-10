@@ -91,8 +91,6 @@ Node.js
 
 Express
 
-JSON Web Token (JWT)
-
 Middleware Logger
 
 Manipulação de arquivos JSON
