@@ -22,8 +22,6 @@ Layout responsivo com Bootstrap 5 e fontes personalizadas
 
 API desenvolvida em Node.js + Express
 
-Autenticação JWT (token) para login seguro
-
 Logger para monitoramento de requisições e erros
 
 Manipulação de dados usando arquivos JSON:
